@@ -22,5 +22,5 @@ fi
 
 aws ecr get-login-password --region "${region}" --profile "${profile}" | docker login --username AWS --password-stdin "120717539064.dkr.ecr.${region}.amazonaws.com"
 docker build -t "${buildTag}" .
-docker tag "${buildTag}" "120717539064.dkr.ecr.us-west-2.amazonaws.com/${buildTag}"
-docker push "120717539064.dkr.ecr.us-west-2.amazonaws.com/${buildTag}"
+docker tag "devops_project:latest 739259488508.dkr.ecr.ap-south-1.amazonaws.com/devops_project:latest"
+docker push "docker push 739259488508.dkr.ecr.ap-south-1.amazonaws.com/devops_project:latest${buildTag}"
